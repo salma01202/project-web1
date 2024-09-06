@@ -1,0 +1,755 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lora", serif;
+    background-color: F6F5F2;
+    /* background-color: rgb(247, 247, 247); */
+}
+/* ////////////////////////////////////////////////////// */
+.home-div1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-image: url(../images/last11.jpg);
+}
+
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-parent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.home-p{
+    font-size: 20px;
+}
+
+.home-btn{
+    font-size: 30px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.home-btn:hover{
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.btn2{
+    background-color: rgb(160, 5, 13);
+    color: white;
+    margin-left: 10px;
+}
+/* /////////////////////////////////////////// */
+.header{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(255, 241, 241);
+    overflow: auto;
+    position: fixed;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+.ul1{
+    list-style: none;
+    float: right; 
+}
+
+.ul1 li {
+    display: inline-block;
+    margin-right: 60px;
+    margin-top:12px ;
+}
+.header-line{
+    width: 42px;
+    height: 3px;
+    background-color: rgb(249, 68, 110);
+    margin-top: 2px;
+    margin-right: 500px;
+}
+/* 777777777777777777777777777777777777777777777777777777777777 */
+
+.Welcome-line , .recipes-line ,.offer-line , .pricing-line , .team-line , .news-line{
+    height: 4px;
+    width: 70px;
+    background-color: rgb(197, 143, 158);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.welcome-container , .recipes-container , .checkups-container , .pricing-container , .team-container , .news-container{
+    width: 80%;
+    margin: auto;
+}
+
+/* //////////////////////////////////// */
+
+.Welcome-title1{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 150px ;
+}
+
+.welcome-parent{
+    overflow: auto;
+    margin-top: 80px;
+    position: relative;
+}
+
+.welcome-item{
+    float: left;
+    width: 30%;
+    border: 1px solid rgb(159, 159, 159);
+    text-align: center;
+    font-size: 17px;
+    padding: 25px 6px;
+    position: relative;
+}
+
+
+.item2{
+    margin: 0 5%;
+}
+
+.welcome-p{
+    letter-spacing: 2px;
+    color: grey;
+}
+
+.i{
+    color: rgb(93, 154, 253);
+    font-size: 26px;
+}
+
+.welcome-a{
+    color: rgb(98, 151, 249);
+}
+/* /////////////////////////////////////////////////////// */
+
+.welcome-item:after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    
+    background-color: black;
+    opacity: 0;
+    z-index: -1;
+}
+
+.welcome-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 1s;  
+}
+
+.welcome-item:hover .welcome-title {
+    color: white;
+}
+
+.welcome-item:hover .welcome-p{
+    color:rgb(186, 186, 186) ;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+.background{
+    height: 1200px;
+    background-color: gainsboro;
+    background-color: F0EBE3;
+    margin-top: 150px;
+    overflow: auto;
+    position: relative;
+}
+
+.recipes-title1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    color: rgb(26, 25, 25);
+}
+
+.recipes-parent{
+    margin-top: 70px;
+    position: relative;
+ }
+
+.recipes-item{
+    float: left;
+    width: 30%;
+    position: relative; 
+    font-family: "Sevillana", cursi;
+    font-size: 25px;
+}
+
+.recipes-item2{
+    margin: 0 5%;
+}
+
+.item6{
+    margin-top: 80px;
+}
+
+.recipes-overlay:after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+} 
+
+.recipes-overlay:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+} 
+
+.recipes-img{
+    padding:25px 30px ;
+}
+
+.recipes-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    visibility: hidden;
+}
+
+.recipes-item:hover .recipes-info{
+    color: white;
+    visibility: visible;
+    z-index: 5;
+} 
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+.offer-title1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.offer-container{
+    width: 80%;
+    margin: auto;
+}
+
+.offer-parent{
+    
+    overflow: auto;
+    margin-top: 80px;
+}
+
+.offer-item3{
+    float: left;
+    width: 30%;
+    border: 1px solid rgb(154, 154, 154); 
+    padding: 30px  20px;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.t3{
+    margin: 0  5%;
+}
+
+.tt{
+    margin-top: 25px;
+}
+
+.offer-title{
+    margin: -30px  0  0  50px; 
+}
+
+.i{
+    font-size: 30px;
+    color: F3D0D7;
+}
+
+.offer-p{
+    margin: 20  0 0 50;
+    color: rgb(138, 137, 137);
+}
+
+.offer-item3:after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+    z-index: -1;
+}
+
+.offer-item3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.offer-item3:hover .offer-title{
+    color: white;
+}
+
+.offer-item3:hover .offer-p{
+    color: gainsboro;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+.checkups-parent{
+    width: 350px;
+    margin-top: 100px;
+}
+
+.checkups-title1{
+    font-size: 30px;
+}
+
+.checkups-line{
+    width: 60px;
+    height: 5px;
+    background-color: rgb(184, 134, 152);
+    margin-top: 10px;
+}
+
+.checkups-img{
+    margin-left:650px ;
+    width: 200px;
+    height: 300px;
+}
+
+.text{
+    margin-top: -250px;
+}
+
+.check-i , .checkups-i1{
+    color: rgb(38, 38, 251);
+}
+
+.checkups-i{
+   width: 200px;
+   font-size: 15px;
+   margin:15px 250px ;
+}
+
+.checkups-i2 ,.checkups-i1{
+    display: inline-block;
+}
+
+.checkups-i2{
+    color: rgb(201, 201, 201);
+}
+
+.checkups-i2:hover{
+    color: rgb(47, 25, 251);
+}
+/* ///////////////////////////////////////////////////////////////////////// */
+.section6{
+    width: 100%;
+    height: 50vh;
+     background-image: url(../images/sport.jpg); 
+     background-attachment: fixed;
+    margin-top: 200px;
+    background-size: cover;
+    position: relative;
+}
+
+.section6-overlay{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.section6-i{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+   float: left;
+    margin:180px 0 0 200px;
+    text-align: center;
+}
+
+.sec-i{
+    margin-top: -45px ;
+    color: F3D0D7;
+    font-size: 30px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+.pricing-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    text-transform: capitalize ;
+}
+
+.pricing-parent{
+overflow: auto;
+margin-top: 100px;
+}
+
+.pricing-item{
+   float: left;
+   width: 30%;
+   border: 1px solid rgb(168, 168, 168);
+   text-align: center;
+   padding: 40px 0;
+   position: relative;
+   background-color: rgb(250, 254, 255);
+}
+
+.pricing-p{
+    text-transform: uppercase;
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+}
+
+.price{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(253, 110, 91);
+    margin: auto;
+}
+
+.price-h2{
+    font-size: 40px;
+}
+
+.price-title1{
+   font-size: 20px; 
+}
+
+.pricing-text{
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+.btn{
+    margin-top: 25px;
+    padding: 4px 14px;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid  rgb(249, 85, 85) ;
+}
+
+.pricing2{
+    margin:0  5%;
+}
+
+.pricing-item:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0;
+}
+
+.pricing-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.pricing-item:hover .price-title1{
+    color: rgb(254, 96, 96);
+}
+
+.pricing-item:hover .price-h2 {
+    color: rgb(254, 96, 96);
+}
+
+.pricing-item:hover .pricing-p{
+    color: rgb(254, 96, 96);
+}
+/* /////////////////////////////////////////////////// */
+.sec8{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/desert2.jpg);
+    background-attachment: fixed;
+    margin-top: 150px;
+    background-size: cover;
+    position: relative;
+}
+
+.sec8-overlay{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.sec8-img{
+    float: left;
+   margin: 100px 0;
+   margin-left: 250px;
+   color: white;
+}
+
+.sec8-img8{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.sec8-info{
+   margin: -70px 100;
+}
+
+.sec8-p{
+    margin-top: 100px;
+    width: 400px;
+}
+
+.sec8-span{
+    color: rgb(255, 209, 202);
+}
+
+/* ////////////////////////////////////////////////////////// */
+.team-title1{
+    text-align: center;
+    margin-top: 140px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.team-parent{
+    margin-top: 80px;
+    overflow: auto;
+}
+
+.team-item9{
+    float: left;
+    width: 30%;
+    padding: 20px 14px;
+    text-align: center;
+    background-color: F0EBE3;
+    position: relative;
+}
+
+.team-2{
+    margin: 0 5%;
+}
+
+.team-img{
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.team-img img{
+    width: 100%; 
+}
+
+.team-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+.team-item9:hover .team-overlay{
+    visibility: visible;
+}
+
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(94, 186, 252);
+    margin-left: auto;
+}
+
+.team-overlay a i{
+    line-height: 30px;
+}
+
+.team-info .team-title{
+    padding: 12px 0;
+}
+
+.team-info p{
+   color: grey;
+   text-transform: uppercase;
+   font-size: 17px;
+}
+
+.team-item9:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: black;
+    opacity: 0.5;
+}
+
+.team-item9:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.team-item9:hover .team-info .team-title{
+    color: white;
+}
+
+.team-item9:hover .team-info .team-p{
+    color: rgb(86, 173, 255);
+}
+/* ///////////////////////////////////////////////////////////////// */
+.news-title1{
+     text-align: center;
+     margin-top: 150px;
+     font-size: 40px;
+}
+
+.news-parnet{
+    margin-top: 80px;
+    overflow: auto;
+   background-color: rgb(250, 250, 250);
+}
+
+.news-item{
+    float: left;
+    width: 30%;
+    background-color: white;
+    padding: 0 2.5%;
+    padding-bottom: 1%;
+    position: relative;
+}
+
+.news-item2{
+    margin: 0 5%;
+}                        
+
+.news-title{
+    line-height: 60px;
+}
+
+.news-coment{
+    font-size: 12px;
+}
+
+.nwes-a , .news-i{
+    text-decoration: none;
+    color: rgb(0, 42, 255);
+}
+
+.news-p{
+    color: rgb(129, 129, 129);
+}
+
+.news-item:after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(68, 194, 252);
+    opacity: 0;
+}
+
+.news-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.last-sec{
+    width: 100%;
+    height: 300px;
+    background-color:rgb(228, 207, 207);
+    text-align: center;
+}
+
+.last-img{
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    padding: 50px 0 0px 0;
+}
+
+.last-icon{
+    margin-top: 5px;
+}
+
+.last-i:hover{
+     opacity: 0.5;
+}
+
+.last-i{
+    color: white;
+    font-size: 25px;
+    background-color: rgb(64, 140, 215);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+}
+
+.last-icon .last-i{
+   line-height: 50px;
+}
+
+.last-p{
+   padding: 20px 0 20px 0;
+}
