@@ -1,488 +1,605 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<HTML>
     <head>
-        <link rel="stylesheet" href="css/all.css">
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Sevillana&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="css/all.css">
+        
     </head>
     <body>
-        <div class="home-div1">
-            <div class="home-overlay">
-                <div class="home-parent">
-                   <h2 class="home-title1">life style healthy</h2>
-                    <p class="home-p">Your essential guide to a healthier life full of activity and vitality </p>
-                    <button class="home-btn">get stared!</button>
-                    <button class="home-btn btn2">learn more</button>
-                </div> <!-- /home-parent -->
-                <div class="header">
-                 <ul class="ul1">
-                         <li>home</li>
-                         <li>about</li>
-                         <li>services</li>
-                         <li>prices</li>
-                         <li>team</li>
-                         <li>blog</li>
-                         <li>contact</li>
-                         <div class="header-line"></div>
-                  </ul> 
-                  <!-- <div class="header-line"></div> -->
-                  <img src="images/logo.jfif" width="350" height="50">
-              </div> <!-- /header -->
-            </div> <!-- /home-overlay -->
-        </div><!-- /home-div1 -->
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <img src="images/logo.jpg" class="rounded-circle mx-4" width="70px" height="70px" alt="">
+              <a class="navbar-brand" href="#">Sweets</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" style="color: rgb(106, 86, 114);" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: rgb(103, 81, 110);" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown border border-2 rounded">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Varieties
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item textcolor-denger" href="#">CAKE</a></li>
+                      <li><a class="dropdown-item" href="#">ICE CREAM</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">PUDDING</a></li>
+                      <li><a class="dropdown-item" href="#">WAFFLE</a></li>
+                      <li><a class="dropdown-item" href="#">COOKIES</a></li>
+                      <li><a class="dropdown-item" href="#">DONUTS</a></li>
+                      <li><a class="dropdown-item" href="#">MORE..</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About</a>
+                  </li>
+                </ul>
+                <form class="header-actions d-flex">
+                  <input class="form-control me-2 border shadow" type="search" placeholder="Search" aria-label="Search"> 
+                  <button class="btn btn-light me-2" type="submit" style="background-color: rgb(199, 149, 217); color: white;">Search</button>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-light" style="background-color: rgb(199, 149, 217); color: white;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Login
+                 </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="mb-3">
+                              <label for="exampleFormControl" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword">
+                            </div>
+                          </div>
+                          <div class="form-check form-switch pe-3">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Remmember me</label>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-light btn1-modal">Login</button>
+                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </nav>  
+          <!--////////end navbar//////////////////////// -->
+
+          <!-- ///Social media side/////// -->
+          <div class="carousel-icon">
+            <ul>
+             <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+             <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+             <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+             <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+             <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            </ul>
+          </div>
+
+          <!-- /////////////start carousel////////////// -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/bg1.jpg" class="d-block w-100" style="height: 100vh;"  alt="...">
+                
+                <div class="carousel-caption d-none d-md-block text-white rounded">
+                  <h3>CAKE</h3>
+                  <p>Soft cake topped with fresh cream and spring blossoms.</p>
+                  <button type="button" class="btn btn-light">Login</button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+               
+                <img src="images/bg2.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white rounded">
+                  <h3>FLORAL CUPCAKES</h3>
+                  <p>Floral Cupcakes are cupcakes decorated with buttercream flowers</p>
+                  <button type="button" class="btn btn-light">Login</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+               
+                <img src="images/bg3 (2).jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white rounded">
+                  <h3>RASPBERRY TART</h3>
+                  <p>Crispy tart filled with creamy pink mousse and topped with fresh raspberries.</p>
+                  <button type="button" class="btn btn-light">Login</button>
+                </div>
+              </div>
+              <div class="carousel-item"  >
+               
+                <img src="images/bg4.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white rounded">
+                  <h3>MACARONS</h3>
+                  <p>Macarons are French almond cookies.</p>
+                  <button type="button" class="btn btn-light">Login</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <div class="welcome rounded-bottom p-4 mb-3">
+          <h2 class="title-welcome">WELCOME</h2>
+          <p class="p-welcome">Welcome to our stores Our stores provide many wonderful things with high jawda and we will be happy with your experience of it, as Delia has many diverse varieties.</p>
+          <button type="button" class="btn btn-light">Learn more</button>
+        </div>
         
-        <!-- /////////////////////////////////////////////// -->
-
-
+        <hr>
         
-        
-         <h2 class="Welcome-title1">Welcome To Website</h2>
-        <div class="Welcome-line"></div>
+        <div class="Popular fs-1 my-3 pt-3 rounded text-light">
+           <p class="p-Popular">popular dessert in our resturant</p>
+        </div> 
 
-        <div class="welcome-container">
-            <div class="welcome-parent">
-                <div class="welcome-item b">
-                    <i class="fa-solid fa-gears i"></i>
-                    <br>
-                    <br>
-                    <h2 class="welcome-title">Healthy recipes</h2>
-                    <br>
-                    <p class="welcome-p">Ideas and recipes for healthy food and sweets Prepare healthy dishes </p>
-                    <br>
-                    <a class="welcome-a">read more</a>
-                </div> <!-- /welcome-item -->
-                <div class="welcome-item item2">
-                    <i class="fa-solid fa-wand-magic-sparkles i"></i>
-                    <br>
-                    <br>
-                    <h2 class="welcome-title">set smarter health goals</h2> 
-                    <br>
-                    <p class="welcome-p">what you need is a fitness tracker and a smart goal</p>
-                    <br>
-                    <a class="welcome-a">read more</a>
-                </div>  <!-- /welcome-item -->
-                <div class="welcome-item">
-                    <i class="fa-solid fa-mobile-screen i"></i>
-                    <br>
-                    <br>
-                    <h2 class="welcome-title">long-distance caregiving</h2>
-                    <br>
-                    <p class="welcome-p">If you are away and want to follow up via the site with your doctor</p>
-                    <br>
-                    <a class="welcome-a">read more</a>   
-                </div>  <!-- /welcome-item -->
-            </div> <!-- / welcome-parent-->
-        </div> <!-- / welcome-container -->
-        
-        <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
-
-        <div class="background">
-         <h2 class="recipes-title1">healthy recipes</h2>
-         <div class="recipes-line"></div> 
-         <div class="recipes-container">
-             <div class="recipes-parent">
-                 <div class="recipes-item">
-                    <div class="recipes-overlay">
-                        <div class="recipes-img">
-                          <img src="images/recipes1.jpg" width="300" height="350" >
-                        </div> <!-- /recipes-img -->
-                     <div class="recipes-info">
-                         <p class="recipes-p">Oatmeal</p>
-                         <h2 class="recipes-title">Breakfast</h2>
-                         <i class="fa-solid fa-pen-to-square"></i>
-                         <i class="fa-solid fa-magnifying-glass"></i>
-                     </div> <!-- /recipes-info -->
-                  </div><!-- /recipes-overlay -->
-                </div> <!-- /recipes-item -->
-                 
-                <div class="recipes-item recipes-item2">
-                    <div class="recipes-overlay">
-                        <div class="recipes-img">
-                          <img src="images/recipes2.webp" width="300" height="350" >
-                        </div> <!-- /recipes-img -->
-                     <div class="recipes-info">
-                         <p class="recipes-p">Chili</p>
-                         <h2 class="recipes-title">Main Meal</h2>
-                         <i class="fa-solid fa-pen-to-square"></i>
-                         <i class="fa-solid fa-magnifying-glass"></i>
-                     </div> <!-- /recipes-info -->
-                  </div><!-- /recipes-overlay -->
-                 </div> <!-- /recipes-item -->
-
-                 <div class="recipes-item">
-                    <div class="recipes-overlay">
-                        <div class="recipes-img">
-                          <img src="images/recipes3.jpg" width="300" height="350" >
-                        </div> <!-- /recipes-img -->
-                     <div class="recipes-info">
-                         <p class="recipes-p">Vegetarian</p>
-                         <h2 class="recipes-title">Beans On Toast</h2>
-                         <i class="fa-solid fa-pen-to-square"></i>
-                         <i class="fa-solid fa-magnifying-glass"></i>
-                     </div> <!-- /recipes-info -->
-                  </div><!-- /recipes-overlay -->
-                 </div> <!-- /recipes-item -->
-
-                 <div class="recipes-item  item6">
-                    <div class="recipes-overlay">
-                        <div class="recipes-img img">
-                          <img src="images/recipes4.webp" width="300" height="350" >
-                        </div> <!-- /recipes-img -->
-                     <div class="recipes-info">
-                         <p class="recipes-p">Sheet Pan Fruit Crisp</p>
-                         <h2 class="recipes-title">Dessert</h2>
-                         <i class="fa-solid fa-pen-to-square"></i>
-                         <i class="fa-solid fa-magnifying-glass"></i>
-                     </div> <!-- /recipes-info -->
-                  </div><!-- /recipes-overlay -->
-                 </div> <!-- /recipes-item -->
-
-                 <div class="recipes-item recipes-item2  item6">
-                    <div class="recipes-overlay">
-                        <div class="recipes-img img">
-                          <img src="images/recipes5.webp" width="300" height="350" >
-                        </div> <!-- /recipes-img -->
-                     <div class="recipes-info">
-                         <p class="recipes-p">Apple Sticky Buns</p>
-                         <h2 class="recipes-title">Fall</h2>
-                         <i class="fa-solid fa-pen-to-square"></i>
-                         <i class="fa-solid fa-magnifying-glass"></i>
-                     </div> <!-- /recipes-info -->
-                  </div><!-- /recipes-overlay -->
-                 </div> <!-- /recipes-item -->
-
-                 <div class="recipes-item item6">
-                    <div class="recipes-overlay">
-                        <div class="recipes-img img">
-                          <img src="images/recipes6.webp" width="300" height="350" >
-                        </div> <!-- /recipes-img -->
-                     <div class="recipes-info">
-                         <p class="recipes-p">Apple Burrata Salad</p>
-                         <h2 class="recipes-title">Salads</h2>
-                         <i class="fa-solid fa-pen-to-square"></i>
-                         <i class="fa-solid fa-magnifying-glass"></i>
-                     </div> <!-- /recipes-info -->
-                  </div><!-- /recipes-overlay -->
-                 </div> <!-- /recipes-item -->
-
-             </div> <!-- /recipes-parent -->
-         </div> <!-- /recipes-container -->
-  </div> <!-- /background -->
-
-     <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-     <h2 class="offer-title1">what we offer</h2> 
-     <div class="offer-line"></div> <!-- /offer-line -->
-     <div class="offer-container">
-        <div class="offer-parent">
-            <div class="offer-item3">
-                <i class="fa-solid fa-capsules i"></i>
-                <h2 class="offer-title">Vitamin&Supplement </h2>
-                <p class="offer-p">Explore reviews of top vitamins and supplements to find what you need to meet your health goals.</p>
-            </div> <!-- /offer-item3 -->
-            
-            <div class="offer-item3 t3">
-                <i class="fab fa-nutritionix i"></i>
-                <h2 class="offer-title">Nutrition </h2>
-                <p class="offer-p">Explore meal delivery services, plans, and reviews of kitchen products to promote your healthy lifestyle.</p>
-           </div> <!-- /offer-item3 -->
+        <!--/// start-accordion-Popular //// -->
+        <div class="accordion accordion-flush mb-3 " id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header shadow bg-body rounded" id="flush-headingOne">
+              <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Raspberry Tart
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                A tart made with a buttery pastry crust, filled with a creamy custard or cream cheese mixture, and topped with fresh raspberries and a dusting of powdered sugar.<code></code></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header shadow bg-body rounded" id="flush-headingTwo">
+              <button class="accordion-button collapsed fs-5 accordion-button2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Raspberry Cheesecake
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                A creamy cheesecake made with a biscuit or cookie crust, filled with a smooth cream cheese mixture and swirled or topped with fresh raspberries. <code></code></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header shadow mb-2 bg-body rounded" id="flush-headingThree">
+              <button class="accordion-button collapsed fs-5 accordion-button2" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Donuts with Floral Decoration
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                Ring-shaped sweet cakes, either baked or fried, covered with colorful icing and decorated with edible flowers and sprinkles. <code></code></div>
+            </div>
+          </div>
+        </div>
+        <hr>
+         <div class="titlewrite-order">
+            <h2 class="write-order fs-1 my-3 pt-2 rounded text-white">write your order</h2>
+         </div>
+         <!--start To order -->
+         <div class="To-order p-4">
+            <h4>write your order here</h4>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="rounded-bottom" title="Press h..">
+              order here
+            </button>
+            <div class="form-floating mt-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">wirte order</label>
+            </div>
+         </div> <!-- To-order -->
+         <!--////// end To order ////// -->
+         <hr>
+         <!--start To sce comment -->
+         <div class="title-comment">
+            <h2 class="write-comment fs-1 my-3 pt-2 rounded text-white">Write your comment</h2>
+         </div>
+         <div class="To-order p-4">
+            <h4>write your order here</h4>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="rounded-bottom" title="Press h..">
+              comment here
+            </button>
+            <div class="form-floating mt-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">wirte comment</label>
+            </div>
+         </div> 
+         <!--////// end To sce comment ////// -->
+         <!--start To sce suggest -->
+         <div class="title-suggest">
+            <h2 class="write-comment fs-1 my-3 pt-2 rounded text-white">suggest flavor</h2>
+         </div>
+         <div class="To-order p-4">
+            <h4>Suggest a new cake flavor!</h4>
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Press h..">
+              Send Suggestion
+            </button>
+            <div class="form-floating mt-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">What's your dream cake flavor?</label>
+            </div>
+         </div> 
+         <!--////// end To sce suggest ////// -->
+ <!-- ////////////start  Famous/////////-->
+         <hr>      
+ <div class="Image" style="height: 50vh; width: 100%;" ></div>
+   <div class="title-Famous">
+       <h2 class="text-center fs-1 mb-3 pt-3 rounded text-white">Famous dishes</h2>
+   </div>
            
-           <div class="offer-item3">
-                <i class="fa-solid fa-brain i"></i>
-                <h2 class="offer-title"> Mental Health</h2>
-                <p class="offer-p">Explore top therapy services and read reviews on books, apps, and other mental health resources.</p>
-            </div> <!-- /offer-item3 -->
-           
-            <div class="offer-item3 tt">
-                <i class="fa-solid fa-dumbbell i"></i>
-                <h2 class="offer-title"> physically active </h2>
-                <p class="offer-p">This is the time to shift your exercise routine to your home. There are lots of options for staying active.</p>
-            </div> <!-- /offer-item3 -->
-            
-            <div class="offer-item3 t3 tt">
-                <i class="fa-solid fa-wheat-awn i"></i>
-                <h2 class="offer-title">Healthy Recipes </h2>
-                <p class="offer-p"> from breakfsat iders to no-guilt dessert prepare dishes that are healthy and delicious.</p>
-            </div> <!-- /offer-item3 -->
-            
-            <div class="offer-item3 tt">
-                <i class="fa-solid fa-capsules i"></i>
-                <h2 class="offer-title">Vitamin&Supplement </h2>
-                <p class="offer-p">Explore reviews of top vitamins and supplements to find what you need to meet your health goals.</p>
-            </div> <!-- /offer-item3 -->
-       </div> <!-- /offer-parent -->
-     </div> <!-- /offer-container -->
+<div class="container my-5">
+  <div class="row row-cols-2 row-cols-lg-3 g-4">
+  
+    <!-- كارد 1 -->
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+        <img src="images/card1.jpg" class="card-img-top rounded mx-auto d-block" style="width: 18rem; height: 27rem;" alt="Strawberry Tart">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="card-title mb-0 fs-4">Strawberry Tart</h5>
+            <a href="#" class="btn btn-secondary btn-sm">Order now</a>
+          </div>
+          <p class="card-text">A flaky tart filled with rich cream and topped with a mix of berries and strawberries.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- كارد 2 -->
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+        <img src="images/card2.jpg" class="card-img-top rounded mx-auto d-block" style="width: 18rem; height: 27rem;" alt="Vanilla Ice Cream">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="card-title mb-0">Vanilla Ice Cream</h5>
+            <a href="#" class="btn btn-secondary btn-sm">Order now</a>
+          </div>
+          <p class="card-text">Enjoy the creamy delicious taste of vanilla in every bite Enjoy the refreshing summer atmosphere!</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- كارد 3 -->
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+        <img src="images/card3.jpg" class="card-img-top rounded mx-auto d-block" style="width: 18rem; height: 27rem;" alt="Crepe with berries">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="card-title mb-0">Crepe with berries</h5>
+            <a href="#" class="btn btn-secondary btn-sm">Order now</a>
+          </div>
+          <p class="card-text">Crepe filled with whipped cream and the refreshing flavor of berries, with a touch of decoration from violet flowers.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- كارد 4 -->
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+        <img src="images/card4.jpg" class="card-img-top rounded mx-auto d-block" style="width: 18rem; height: 27rem;" alt="Pink flower crepe">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+             <h5 class="card-title mb-0">Pink flower crepe</h5>
+             <a href="#" class="btn btn-secondary btn-sm">Order now</a>
+          </div>
+          <p class="card-text">A luxurious crepe decorated with pink flowers. A smooth taste that melts in your mouth, with colors that brighten your spirit for a beautiful day.</p>
+         </div>
+      </div>
+    </div>
+    
+    <!-- كارد 5 -->
+    <div class="col">
+      <div class="card" style="width: 20rem;">
+       <img src="images/card5.jpg" class="card-img-top rounded mx-auto d-block" style="width: 18rem; height: 27rem;" alt="Lemon Delight Cake">
+       <div class="card-body">
+         <div class="d-flex justify-content-between align-items-center mb-3">
+           <h5 class="card-title mb-0">Lemon Delight Cake</h5>
+           <a href="#" class="btn btn-secondary btn-sm">Order now</a>
+         </div>
+         <p class="card-text">A light lemon cake with a refreshing taste and a white glaze that melts in your mouth.Fresh lemon slices and a hint of mint add an irresistible freshness.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- كارد 6 -->
+    <div class="col">
+     <div class="card" style="width: 20rem;">
+       <img src="images/card6.jpg" class="card-img-top rounded mx-auto d-block" style="width: 18rem; height: 27rem;" alt="Choco Chip Cookie">
+       <div class="card-body">
+         <div class="d-flex justify-content-between align-items-center mb-3">
+           <h5 class="card-title mb-0">Choco Chip Cookie</h5>
+           <a href="#" class="btn btn-secondary btn-sm">Order now</a>
+         </div>
+         <p class="card-text">Freshly baked cookies bursting with chocolate chips and dripping with rich, melted chocolate.Every bite is pure happiness for chocolate lovers.</p>
+       </div>
+     </div>
+    </div>
 
-     <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
-        <div class="checkups-container">
-          <div class="checkups-parent">
-            <div class="checkups-img">
-                <img src="images/Checkups2.jpg" alt="">
-                <div class="checkups-i">
-                    <i class="fa-solid fa-circle checkups-i1"></i>
-                    <i class="fa-solid fa-circle checkups-i2"></i>
-                    <i class="fa-solid fa-circle checkups-i2"></i>
-                  </div> <!-- /checkups-i -->  
-            </div> <!-- /checkups-img -->
-            <div class="text">
-            <h2 class="checkups-title1"> Regular check-ups</h2>
-             <div class="checkups-line"></div>
-             <br>
-             <br>
-             <p class="checkups-p">This blog aims to highlight the importance of regular health checkups, offer practical tips for scheduling them, and explain how they can benefit you in the long run.</p>
-             <br>
-             <i class="fa-regular fa-circle-check check-i"></i>
-             <span class="checkups-span">Preventive care and early detection can lead to a healthier, more vibrant life.</span>
-             <br>
-             <br>
-             <i class="fa-regular fa-circle-check check-i"></i>
-             <span class="checkups-span">Catching health issues early can save you money on expensive treatments and hospitalizations.</span>
-             <br>
-             <br>
-             <i class="fa-regular fa-circle-check check-i"></i>
-             <span class="checkups-span">Regular checkups can help you live a longer, healthier life by preventing and managing chronic conditions.</span>
-              <br>
-              <br>
-             <i class="fa-regular fa-circle-check check-i"></i>
-             <span class="checkups-span">Support and motivate each other to stay on track with your health goals.</span>
-                         
-            </div><!-- /text -->
-            </div> <!-- /checkups-parent -->
-        </div> <!-- /checkups-container -->
+  </div>
+</div>
+        
+       <!-- ///////////end//////////////// -->
 
-    <!-- //////////////////////////////////////////////////////////////////////////// -->
-    <div class="section6">
-        <div class="section6-overlay">
-            <div class="section6-i">
-              <i class="fa-solid fa-users sec-i"></i>
-              <h2 class="sec6-title">851k</h2>
-              <p class="sec6-p">happy clients</p> 
-            </div> <!-- /section6-i -->
-            <div class="section6-i">
-              <i class="fa-solid fa-trophy sec-i"></i>
-              <h2 class="sec6-title">20</h2>
-             <p class="sec6-p">awards won</p>
-            </div> <!-- /section6-i -->
-            <div class="section6-i">
-              <i class="fa-solid fa-comments sec-i"></i>
-              <h2 class="sec6-title">418k</h2>
-             <p class="sec6-p">happy clients</p>
-            </div> <!-- /section6-i -->
-            <div class="section6-i">
-              <i class="fa-solid fa-file sec-i"></i>
-              <h2 class="sec6-title">75</h2>
-             <p class="sec6-p">projects completed</p>
-           </div> <!-- /section6-i -->
-        </div> <!-- /section6-overlay -->
-    </div> <!-- /section6 -->
-
- <!--///////////////////////////////////////////////////////////////// -->
-   <h2 class="pricing-title">pricing table</h2>
-   <div class="pricing-line"></div>
-<div class="pricing-container"> 
-   <div class="pricing-parent">
-         <div class="pricing-item">
-             <p class="pricing-p">basic plan</p>
-             <br>
-              <div class="price">
-                <h2 class="price-h2">$9</h2>
-                <h2 class="price-title1">/month</h2>
-              </div> <!-- /price -->
-              <div class="pricing-text">
-              <p class="p1">1gb disk space</p>
-              <p class="p1">100 email account</p>
-              <p class="p1">24/24 supprt</p>
-              <button class="btn">purchase now</button>
-              </div> <!-- /pricing-text -->
-         </div> <!-- /pricing-item -->
-         <div class="pricing-item pricing2">
-            <p class="pricing-p">basic plan</p>
-            <br>
-             <div class="price">
-                <h2 class="price-h2">$9</h2>
-                <h2 class="price-title1">/month</h2>
-             </div> <!-- /price -->
-             <div class="pricing-text">
-             <p class="p1">1gb disk space</p>
-             <p class="p1">100 email account</p>
-             <p class="p1">24/24 supprt</p>
-             <button class="btn">purchase now</button>
-             </div> <!-- /pricing-text -->
-        </div> <!-- /pricing-item -->
-        <div class="pricing-item">
-            <p class="pricing-p">basic plan</p>
-            <br>
-             <div class="price">
-                <h2 class="price-h2">$9</h2>
-                <h2 class="price-title1">/month</h2>
-             </div> <!-- /price -->
-             <div class="pricing-text">
-             <p class="p1">1gb disk space</p>
-             <p class="p1">100 email account</p>
-             <p class="p1">24/24 supprt</p>
-             <button class="btn">purchase now</button>
-             </div> <!-- /pricing-text -->
-        </div> <!-- /pricing-item -->
-     </div> <!-- /pricing-parent -->
- </div> <!-- /pricing-container -->
-
- <!-- ////////////////////////////////////////////////////// -->
-    <div class="sec8">
-      <div class="sec8-overlay">
-         <div class="sec8-img img1">
-             <img src="images/Capture.JPG" alt="" class="sec8-img8">
-             <div class="sec8-info">
-             <h2 class="sec8-title">Jessica Beacom</h2>
-             <span class="sec8-span">Dietitian</span>
-            </div> <!-- /sec8-info -->
-            <p class="sec8-p">Harvard-trained nutritional psychiatrist, nutritional biologist, professional chef</p>
-         </div> <!-- /sec8-img -->
-         <div class="sec8-img img2">       
-             <img src="images/Capture2.JPG" alt="" class="sec8-img8">
-             <div class="sec8-info">
-             <h2 class="sec8-title">Jessie Shafer</h2>
-             <span class="sec8-span">Dietitian</span>
-             </div> <!-- /sec8-info -->
-             <p class="sec8-p">Registered Dietitian & Cookbook Author</p>
-         </div> <!-- /sec8-img -->
-     </div> <!-- /sec8-overlay -->
-    </div> <!-- /sec8 -->
-<!-- ////////////////////////////////////////////////////////// -->
- <h2 class="team-title1">our team</h2>
-  <div class="team-line"></div>
-
-<div class="team-container">
-    <div class="team-parent">
-          <div class="team-item9">
-             <div class="team-img">
-                <img src="images/600x600_laurena_henderson.webp" width="250" height="250">
-
-             <div class="team-overlay">
-               <a href="#"><i class="fa-brands fa-square-facebook"></i></a> 
-               <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-               <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            </div> <!-- /team-img -->
-            </div> <!-- /team-overlay -->
-            <div class="team-info">
-                <h2 class="team-title">Lauren Henderson</h2>
-                <p class="team-p">Dietitian</p>
-            </div> <!-- /team-info -->
-          </div> <!-- /team-item9 -->
+       <!--//// start sce thanks //// -->
+       <div class="Image2" style="height: 50vh; width: 100%;" ></div>
+       <hr>
+       <div class="title-thanks">
+            <h2 class="write-comment fs-1 my-3 pt-2 rounded text-white">thank for</h2>
+       </div>
+       <div class="title-thanks Popular fs-1 my-3 pt-4 rounded text-light">
+           <h2 class="p-thanks">thank for</h2>
+        </div> 
           
-          <div class="team-item9 team-2">
-            <div class="team-img">
-                <img src="images/600x600_dunstan_wilson.webp" width="250" height="250">
-            <div class="team-overlay">
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a> 
-                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            </div> <!-- /team-img -->
-            </div> <!-- /team-overlay -->
-            <div class="team-info">
-                <h2 class="team-title">dunstan wilson</h2>
-                <p class="team-p">Psychiatrist</p>
-           </div> <!-- /team-info -->
-          </div> <!-- /team-item9 -->
-          
-          <div class="team-item9">
-            <div class="team-img">
-                <img src="images/600x600_ashley_walker.webp" width="250" height="250">
-            <div class="team-overlay">
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a> 
-               <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-               <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            </div> <!-- /team-overlay -->
-            </div> <!-- /team-img -->
-            <div class="team-info">
-                <h2 class="team-title">ashley walker</h2>
-                <p class="team-p">Fitness Instructor</p>
-           </div> <!-- /team-info -->
-        </div> <!-- /team-item9 -->
-    </div> <!-- /team-parent -->
- </div> <!-- /team-container -->
+      <div class="container thanks-container">       <!--و بعدين حطيت جواه اب وبعدين اول ديف وبعدين الصورة الاcontainer فكرته اني عملت   --> 
+       <div class="thanks-parnet d-flex justify-content-between">    <!--  دة الاب  -->
+          <div class="thanks-item rounded overflow-hidden ">  <!-- دة اول ديف -->
+             <div class="thanks-img">
+                <img src="images/chef1.jpg" alt="" width="350" height="450">
+                <div class="thanks-overlay">
+                   <div class="date ms-4 mt-4">
+                     <h2 class="fs-6">all thanks and appreciation</h2>
+                     <p><i class="fa-regular fa-clock"></i> october 15. 2025</p> 
+                   </div> <!-- /date -->
+                   <div class="thanks-info ms-4">
+                     <img src="images/chef1.jpg" class="rounded-circle" width="75" height="100" alt="">
+                     <h2 class="fs-5">chef.mohamed ahmed</h2>
+                     <p>the head chef</p>
+                   </div> <!-- /thanks-info -->
+                </div> <!-- /thanks-overlay -->
+             </div> <!-- /thanks-img --> 
+          </div> <!-- /thanks-item -->
 
-<!-- ///////////////////////////////////////////////////////// -->
- <h2 class="news-title1">Recent News</h2>
- <div class="news-line"></div>
+           <div class="thanks-item rounded overflow-hidden ">  <!-- دة تاني كارد -->
+             <div class="thanks-img">
+                <img src="images/chef2.jpg" alt="" width="350" height="450">
+                <div class="thanks-overlay">
+                   <div class="date ms-4 mt-4">
+                     <h2 class="fs-6">all thanks and appreciation</h2>
+                     <p><i class="fa-regular fa-clock"></i> october 15. 2025</p> 
+                   </div> <!-- /date -->
+                   <div class="thanks-info ms-4">
+                     <img src="images/chef2.jpg" class="rounded-circle" width="75" height="100" alt="">
+                     <h2 class="fs-5">chef.Cédric Grolet</h2>
+                     <p>the head chef</p>
+                   </div> <!-- /thanks-info -->
+                </div> <!-- /thanks-overlay -->
+             </div> <!-- /thanks-img --> 
+          </div> <!-- /thanks-item -->
 
- <div class="news-container">
-     <div class="news-parnet">
-         <div class="news-item">
-             <img src="images/5.jpg" width="250" height="300" alt="">
-             <br>
-             <br>
-             <div class="news-coment">
-             <i class="fa-solid fa-user news-i"></i>
-             <span>Renee Cherry</span>
-             <i class="fa-regular fa-clock news-i"></i>
-             <span class="news-span">13 Dec</span>
-             <i class="fa-solid fa-comments news-i"></i>
-             <span class="news-span">75</span>
-             </div> <!-- /news-coment -->
-             <h2 class="news-title">Healthy Sleeping Habits</h2>
-             <p class="news-p">Lack of sleep can affect the body in many ways. Beyond just feeling tired, long-term sleep deprivation may be linked to health problems such as heart disease, obesity and depression</p>
-             <br>
-             <a href="#" class="nwes-a">Read more</a>
-         </div> <!-- /news-item -->   
+           <div class="thanks-item rounded overflow-hidden ">  <!-- دة تالت كارد -->
+             <div class="thanks-img">
+                <img src="images/chef3.jpg" alt="" width="350" height="450">
+                <div class="thanks-overlay">
+                   <div class="date ms-4 mt-4">
+                     <h2 class="fs-6">all thanks and appreciation</h2>
+                     <p><i class="fa-regular fa-clock"></i> october 15. 2025</p> 
+                   </div> <!-- /date -->
+                   <div class="thanks-info ms-4">
+                     <img src="images/chef3.jpg" class="rounded-circle" width="75" height="100" alt="">
+                     <h2 class="fs-5">chef.Marília Lefosse</h2>
+                     <p>the head chef</p>
+                   </div> <!-- /thanks-info -->
+                </div> <!-- /thanks-overlay -->
+             </div> <!-- /thanks-img --> 
+          </div> <!-- /thanks-item -->
+       </div> <!-- thanks-parnet -->
+      </div> <!-- thanks-container -->
+      <hr>
+      <!-- //////////////////////////// strat sec new //////////////////////////// -->
+       <h2 class=" fs-1 text-center pt-2 ">New Cake Flavors</h2>
+       <div class="container my-5">
+         <!-- new ===========> card one -->   
+        <div class="card-new d-flex shadow  overflow-hidden ps-4 my-4">
+    <!-- النص -->
+           <div class="card-body flex-fill me-4">
+             <h5 class="card-title mt-4 fs-1">Blooming Bee Cake</h5>
+             <div class="line-new rounded-pill"></div>
+             <div class="icon-new mb-2 text-muted">
+             <p><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</p>
+           </div>
+      
+           <p class="card-text ">
+            The Bee and Flowers Cake is one of our latest creations in the world of luxury cakes. It features a stunning artistic design that combines soft, fluffy layers of cake with smooth cream infused with natural flavors. Decorated with colorful flowers and tiny handcrafted bees, this cake looks vibrant and full of life. It’s not just a dessert, but a true piece of edible art that brings joy and beauty to any occasion. Whether it’s a birthday, a celebration, or a special gathering, this unique cake will make the moment unforgettable.</p>      
+          <div class="btn-new">
+             <a href="#" class="btn btn-secondary me-2"><i class="fa-brands fa-gratipay"></i> love</a>
+             <a href="#" class="btn btn-secondary me-2"><i class="fa-solid fa-clock"></i> 55 mins</a>
+             <a href="#" class="btn btn-secondary btn-news1"><i class="fa-solid fa-star"></i> new</a>
+           </div>
+         </div>
+       <!-- الصورة -->
+          <div class="img-new col-md-4">
+            <img src="images/new1.jpg" class="img-fluid" alt="Card image">
+         </div>
+   </div>
+<!-- new =========> card two -->
+      <div class="card-new2 d-flex shadow  overflow-hidden my-4">
+  <!-- الصورة -->
+  <div class="img-new2 col-md-4">
+    <img src="images/new2.jpg" class="img-fluid" alt="Card image">
+  </div>
+  <!-- النص -->
+  <div class="card-body flex-fill me-4">
+    <h5 class="card-title mt-4 fs-1">Lemon Daisy Tiramisu</h5>
+    <div class="line-new2 rounded-pill"></div>
+    <div class="icon-new mb-2 text-muted">
+      <p><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</p>
+    </div>
+    <p class="card-text">
+      The Lemon Daisy Tiramisu is a refreshing twist on the classic Italian dessert, designed to capture both elegance and freshness. Surrounded by delicate sponge fingers and filled with smooth lemon cream, it offers a light yet flavorful experience in every bite. Topped with charming daisy flowers and lemon slices, this dessert is not only delicious but also a stunning visual delight. Whether you’re hosting a special occasion, celebrating with loved ones, or simply enjoying a quiet moment, this unique tiramisu will bring a touch of beauty and joy to your table.
+    </p>
+    <div class="btn-new2">
+      <a href="#" class="btn btn-secondary me-2"><i class="fa-brands fa-gratipay"></i> love</a>
+      <a href="#" class="btn btn-secondary me-2"><i class="fa-solid fa-clock"></i> 55 mins</a>
+      <a href="#" class="btn btn-secondary btn-news2"><i class="fa-solid fa-star"></i> new</a>
+    </div>
+  </div>
+</div>
+  <!-- new ==========> card three -->
+     <div class="card-new3 card-new d-flex shadow  overflow-hidden ps-4 my-4">
+    <!-- النص -->
+           <div class="card-body flex-fill me-4">
+             <h5 class="card-title mt-4 fs-1 card-text3">Rose Waffle Cake</h5>
+             <div class="line-new3 rounded-pill"></div>
+             <div class="icon-new mb-2 text-muted">
+             <p><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</p>
+           </div>
+      
+           <p class="card-text card-text3">
+             
+             The Rose Waffle Cake is a unique creation that combines elegance with delightful flavor. Made with thin golden waffle layers, it offers the perfect mix of crispness and softness in every bite. Decorated with handcrafted buttercream roses and a gentle dusting of powdered sugar, it feels like a blooming garden placed on your table. More than just a dessert, it is a piece of edible art that brings both beauty and joy. Whether for birthdays, tea parties, or special gatherings, this cake will turn any moment into a truly memorable one.</p>      
+          <div class="btn-new3">
+             <a href="#" class="btn btn-secondary me-2"><i class="fa-brands fa-gratipay"></i> love</a>
+             <a href="#" class="btn btn-secondary me-2"><i class="fa-solid fa-clock"></i> 55 mins</a>
+             <a href="#" class="btn btn-secondary btn-news3"><i class="fa-solid fa-star"></i> new</a>
+           </div>
+         </div>
+    <!-- الصورة -->
+          <div class="img-new col-md-4">
+            <img src="images/new3.jpg" class="img-fluid" alt="Card image">
+         </div>
+   </div>
+<!-- new ==========> card four -->   
+  <div class="card-new4 d-flex shadow  overflow-hidden my-4">
+  <!-- الصورة -->
+  <div class="img-new2 col-md-4">
+    <img src="images/new4 (2).jpg" class="img-fluid" alt="Card image">
+  </div>
 
-           <div class="news-item news-item2">
-                <img src="images/22.jpg" width="250" height="300" alt="">
-                <br>
-                <br>
-                <div class="news-coment">
-                <i class="fa-solid fa-user news-i"></i>
-                <span>Jaime Osnato</span>
-                <i class="fa-regular fa-clock news-i"></i>
-                <span class="news-span">18 Aug</span>
-                <i class="fa-solid fa-comments news-i"></i>
-                <span class="news-span">45</span>
-                </div> <!-- /news-coment -->
-                <h2 class="news-title">Work With Me</h2>
-                <p class="news-p">We’ll work together to create your own unique Change Challenge that works into your busy life. We’ll cover nutrition, training, and the most importantly, your MINDSET.</p>
-                <br>
-                <a href="#" class="nwes-a">Read more</a>
-            </div> <!-- /news-item -->
-                <div class="news-item">
-                    <img src="images/66.webp" width="250" height="300" alt="">
-                    <br>
-                    <br>
-                    <div class="news-coment">
-                    <i class="fa-solid fa-user news-i"></i>
-                    <span>Francesca Krempa</span>
-                    <i class="fa-regular fa-clock news-i"></i>
-                    <span class="news-span">20 Dec</span>
-                    <i class="fa-solid fa-comments news-i"></i>
-                    <span class="news-span">55</span>
-                    </div> <!-- /news-coment -->
-                    <h2 class="news-title">Good Sources of Protein</h2>
-                    <p class="news-p">Protein can help you shed pounds and keep your belly full. It's important to eat the right amount and the right kind of protein You need to get 10%-35% of your calories from protein each day</p>
-                    <br>
-                    <a href="#" class="nwes-a">Read more</a>
-        </div> <!-- /news-item -->
-     </div> <!-- /news-parnet -->
- </div> <!-- /news-container -->
- <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
-    <div class="last-sec">
-         <div class="last-img">
-            <img src="images/sport5.jpg" width="180" height="90" alt="">
-         </div> <!-- /last-img  -->
-         <div class="last-icon">
-            <i class="fa-brands fa-facebook-f last-i"></i>
-            <i class="fa-brands fa-twitter last-i"></i>
-            <i class="fa-brands fa-youtube last-i"></i>
-            <i class="fa-brands fa-linkedin-in last-i"></i>
-            <i class="fa-brands fa-instagram last-i"></i>
-            <i class="fa-brands fa-google-plus-g last-i"></i>
-         </div> <!-- /last-icon -->
-         <p class="last-p">copyright &copy; 2021 . all right reserved by colorlib</p>
-    </div> <!-- /last-sec -->
-    </body>
+  <!-- النص -->
+  <div class="card-body flex-fill me-6">
+    <h5 class="card-title mt-4 fs-1">Orange Blossom Toast</h5>
+    <div class="line-new4 rounded-pill"></div>
+    <div class="icon-new mb-2 text-muted">
+      <p><i class="fa-solid fa-calendar-days"></i> Mon, May 25th 2020</p>
+    </div>
+
+    <p class="card-text">
+      The Orange Blossom Toast is a delightful twist on a simple classic, carefully crafted to highlight both freshness and charm. With layers of golden toast topped with juicy orange slices and smooth cream, it delivers a perfect harmony of sweetness and zest in every bite. Finished with delicate floral touches and hints of citrus, this creation becomes more than just food—it is a vibrant piece of edible beauty. Whether enjoyed at breakfast, shared at a brunch, or served as a light afternoon treat, this toast is sure to bring joy and elegance to any occasion.
+    </p>
+
+    <div class="btn-new4">
+      <a href="#" class="btn btn-secondary me-2"><i class="fa-brands fa-gratipay"></i> love</a>
+      <a href="#" class="btn btn-secondary me-2"><i class="fa-solid fa-clock"></i> 55 mins</a>
+      <a href="#" class="btn btn-secondary btn-news4"><i class="fa-solid fa-star"></i> new</a>
+    </div>
+  </div>
+ </div>
+</div>
+<!-- //////////////////////////// end sce new //////////////////////// -->
+<!-- //////////////  start sce join  /////////////// -->
+ <div class="container">
+  <h2 class="title-join fs-1 text-center pt-2">join us</h2>
+   <div class="d-flex justify-content-between  flex-wrap">
+       <div class="item-join rounded shadow text-center py-3 my-4">
+         <h2>Subscribe Now</h2>
+         <img src="images/join1 (2).jpg" width="150" height="140" alt="">
+         <p><a href="#">Go to link</a></p>
+       </div> <!-- item-join -->
+   
+       <div class="item-join rounded shadow text-center py-3 my-4">
+        <h2>follow</h2>
+        <img src="images/join2.jpg" width="150" height="140" alt="">
+        <p><a href="#">Go to link</a></p>
+       </div> <!-- item-join -->
+   
+       <div class="item-join rounded shadow text-center py-3 my-4">
+        <h2>watch videos</h2>
+        <img src="images/join3.jpg" width="150" height="140" alt="">
+        <p><a href="#">Go to link</a></p>
+       </div> <!-- item-join -->
+   
+       <div class="item-join rounded shadow text-center py-3 my-4">
+        <h2>line the page</h2>
+        <img src="images/join4.jpg" width="150" height="140" alt="">
+        <p><a href="#">Go to link</a></p>
+       </div> <!-- item-join -->
+   </div> 
+  </section>
+  </div>
+<!-- ///////////////////////////end sec join////////////////////////////// -->
+ <!-- start footer-sec -->
+  
+  <footer class="footer-sec text-white">
+  <div class="container py-3">
+    <div class="row text-center">
+      <!-- العمود الأول -->
+      <div class="col-md-4 footer-column mb-4 mb-md-0">
+        <hr class="footer-line">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="images/logo.jpg" class="rounded-circle footer-img" width="60" height="60" alt="">
+          <h3 class="ms-2">Good Company</h3>
+        </div>
+        <hr class="footer-line">
+        <p>Tel: 000-000-000</p>
+        <p>Address: EGYPT</p>
+        <p>Fax: 000-000-000</p>
+      </div>
+
+      <!-- العمود الثاني -->
+      <div class="col-md-4 footer-column mb-4 mb-md-0">
+        <hr class="footer-line">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="images/logo.jpg" class="rounded-circle footer-img" width="60" height="60" alt="">
+          <h3 class="ms-2">Important links</h3>
+        </div>
+        <hr class="footer-line">
+        <p><a href="#" class="text-white text-decoration-none">Visit Us</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Facebook</a></p>
+        <p><a href="#" class="text-white text-decoration-none">Your health is more important</a></p>
+      </div>
+
+      <!-- العمود الثالث -->
+      <div class="col-md-4 footer-column">
+        <hr class="footer-line">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="images/logo.jpg" class="rounded-circle footer-img" width="60" height="60" alt="">
+          <h3 class="ms-2">Vision</h3>
+        </div>
+        <hr class="footer-line">
+        <p>Services for all</p>
+        <p>Provide best services</p>
+        <p>You will be better than before</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="footer-bottom">
+  <!-- حقوق النشر -->
+  <div class="text-center mt-4 pb-2">
+    <p class="copyright mb-0">© 2025 Good Company. All Rights Reserved.</p>
+  </div>
+  <hr class="footer-bottom">
+  
+ <script src="js/bootstrap.min.js"></script> 
+
+</body>
 </html>
-
-
